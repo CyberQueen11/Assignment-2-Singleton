@@ -1,16 +1,14 @@
-package noFactoryMethod;
+package withEnum;
 
-public class RootUser2 {
-    public final static RootUser2 INSTANCE = new RootUser2();
+public enum RootUser3 {
+    INSTANCE;
+
     private int UID = 0;
     private int GID = 0;
     private String userName = "root";
     private String name = "Super user";
     private String home = "/root";
     private String shell = "/bin/sh";
-
-    public RootUser2() {
-    }
 
     @Override
     public String toString() {
